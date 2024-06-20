@@ -19,7 +19,7 @@ This project presents an interactive web map developed using Leaflet.js to visua
 ### Steps
 1. **Clone the repository:**
     ```sh
-   [ git clone https://github.com/your-username/eastern-mau-forest-webmap.git](https://github.com/Papsmyk/Eastern-Mau-Forest-Reserve-Land-Cover-and-Land-Use-Change-Web-Map.git)
+   [ git clone https://github.com/Papsmyk/Eastern-Mau-Forest-Reserve-Land-Cover-and-Land-Use-Change-Web-Map.git
     ```
 
 2. **Navigate to the project directory:**
