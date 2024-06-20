@@ -19,7 +19,7 @@ This project presents an interactive web map developed using Leaflet.js to visua
 ### Steps
 1. **Clone the repository:**
     ```sh
-   [ git clone https://github.com/Papsmyk/Eastern-Mau-Forest-Reserve-Land-Cover-and-Land-Use-Change-Web-Map.git
+    git clone https://github.com/Papsmyk/Eastern-Mau-Forest-Reserve-Land-Cover-and-Land-Use-Change-Web-Map.git
     ```
 
 2. **Navigate to the project directory:**
@@ -65,5 +65,18 @@ The project utilizes the following data sources:
 - **Customizable Views:** Users can switch between different base maps for better context and understanding.
 
 ## Contributing
-Contributions are welcome! To contribute to this
+Contributions are welcome! To contribute to this project:
+
+1. Fork the repository on GitHub.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
+
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Additional Information
+- **GitHub Repository:** [Eastern Mau Forest Reserve Land Cover and Land Use Change Web Map](https://github.com/Papsmyk/Eastern-Mau-Forest-Reserve-Land-Cover-and-Land-Use-Change-Web-Map)
+- **Live Web Map:** [DroneVerse Web Map](http://droneverse.pro/webmap)
 
