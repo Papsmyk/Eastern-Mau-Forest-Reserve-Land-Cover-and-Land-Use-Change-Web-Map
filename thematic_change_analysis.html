@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map of Eastern Mau Forest Reserve Change Detection from 1984 to 2024</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.4.0/nouislider.min.css" />
+    <link rel="icon" href="./main/favicon.ico" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: 'Coinage Caps';
+            src: url('./fonts/CoinageCapsKrugerGray.ttf') format('truetype');
+            /* Uncomment the following line if using an .otf file */
+            /* src: url('./fonts/custom-font.otf') format('opentype'); */
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            font-family: 'Coinage Caps', sans-serif; /* Apply the custom font to all elements */
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Coinage Caps', sans-serif; /* Apply the custom font */
+        }
+        #map {
+            height: 100%;
+        }
+        .info.legend {
+            margin-bottom: 470px;
+            background: white;
+            padding: 10px;
+            line-height: 18px;
+            color: #555;
+        }
+        .info.legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+        #year-slider {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            width: 90%;
+        }
+        .noUi-pips-horizontal {
+            padding: 10px 0;
+            height: 30px;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+        }
+        #mapTypeSelector {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            Width: 250px;
+            height: 30px;
+            z-index: 1000;
+        }
+        #map-title {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <select id="mapTypeSelector">
+        <option value="thematic_change_analysis.html">Thematic Change Analysis Maps</option>
+        <option value="index.html">Land Cover Classified Maps</option>
+        <option value="density_slices.html">Density Slices Maps</option>
+        
+    </select>
+    <div id="map-title">Thematic Change Analysis Maps</div>
+    <div id="map"></div>
+    <div id="year-slider"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.4.0/nouislider.min.js"></script>
+    <script src="https://unpkg.com/geotiff@1.0.0-beta.7/dist/geotiff.bundle.min.js"></script>
+    <script src="https://unpkg.com/georaster"></script>
+    <script src="https://unpkg.com/georaster-layer-for-leaflet"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="./js/eastern_mau_forest_reserve.js"></script>
+    <script src="./js/density_slices_class_ranges.js"></script>
+    <script src="./js/thematic_change_images.js"></script>
+
+    <script>
+        document.getElementById('mapTypeSelector').addEventListener('change', function() {
+            const selectedPage = this.value;
+            window.location.href = selectedPage;
+        });
+    </script>
+</body>
+</html>
+

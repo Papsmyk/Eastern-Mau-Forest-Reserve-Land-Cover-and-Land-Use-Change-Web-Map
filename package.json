@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "georaster-layer-for-leaflet": "^3.10.0",
+    "http-server": "^14.1.1"
+  }
+}
